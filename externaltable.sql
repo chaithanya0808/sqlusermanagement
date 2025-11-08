@@ -22,6 +22,9 @@ create external table employee(id int, name varchar(20), dept_id int)
 with
 (
 data_source = [EXT_SEA-SQL-DBDEVTEST]
+--incase if table exist with same name
+--schema_name='dbo',
+--object_name = 'address'
 )
 
 select * from employee
